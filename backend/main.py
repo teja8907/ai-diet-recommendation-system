@@ -18,7 +18,11 @@ app.add_middleware(
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
+
 )
+@app.get("/")
+def root():
+    return {"status": "Backend is running"}
 
 # -------------------------------
 # BASE DIR
