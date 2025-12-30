@@ -12,7 +12,7 @@ export default function HomeHero() {
   useEffect(() => {
     const today = new Date().toISOString().split("T")[0];
 
-    fetch(`http://127.0.0.1:8000/today-nutrition-status?date=${today}`)
+    fetch(`https://ai-diet-recommendation-system.onrender.com/today-nutrition-status?date=${today}`)
       .then((res) => res.json())
       .then((data) => setStatus(data))
       .catch(() => {});

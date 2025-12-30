@@ -65,7 +65,7 @@ export default function NutritionTracker() {
 
   /* ---------- FETCH SAVED DATES ---------- */
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/nutrition-dates")
+    fetch("https://ai-diet-recommendation-system.onrender.com/nutrition-dates")
       .then((res) => res.json())
       .then((data) => setSavedDates(data.dates || []))
       .catch(() => {});
@@ -73,7 +73,7 @@ export default function NutritionTracker() {
 
   /* ---------- FETCH DATA BY DATE ---------- */
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/nutrition-by-date?log_date=${dateStr}`)
+    fetch(`https://ai-diet-recommendation-system.onrender.com/nutrition-by-date?log_date=${dateStr}`)
       .then((res) => res.json())
       .then((data) => {
         if (data?.protein > 0) {
@@ -102,7 +102,7 @@ export default function NutritionTracker() {
 
   /* ---------- FOODIE FIXER ---------- */
   const handleFoodieFix = async () => {
-    const res = await fetch("http://127.0.0.1:8000/foodie-fixer", {
+    const res = await fetch("https://ai-diet-recommendation-system.onrender.com/foodie-fixer", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: foodieText }),
@@ -143,7 +143,7 @@ export default function NutritionTracker() {
   };
 
   const saveToBackend = async (p, c, f) => {
-    await fetch("http://127.0.0.1:8000/log-nutrition", {
+    await fetch("https://ai-diet-recommendation-system.onrender.com/log-nutrition", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
