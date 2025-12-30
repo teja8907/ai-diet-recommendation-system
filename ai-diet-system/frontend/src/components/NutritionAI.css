@@ -1,0 +1,61 @@
+.ai-card {
+  background: #fcebd3;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 12px 28px rgba(74, 44, 42, 0.15);
+  margin-top: 40px;
+}
+
+.ai-card h2 {
+  color: #4a2c2a;
+}
+
+.ai-sub {
+  color: #6f4e4b;
+  margin-bottom: 20px;
+}
+
+.ai-inputs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ai-inputs input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: #fff;
+}
+
+.ai-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: #4a2c2a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ai-result {
+  margin-top: 20px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.ai-result h3 {
+  color: #4a2c2a;
+}
+
+.ai-result ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.ai-result li {
+  color: #6f4e4b;
+}

@@ -1,0 +1,128 @@
+/* 🌸 HOME PAGE BACKGROUND */
+/* 🌿 HOME PAGE BACKGROUND — CLEAN, NO PINK */
+.hero {
+  min-height: 100vh;
+  background: #fff6e5; /* SAME AS DIET PLANNER */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* TITLE */
+.hero h1 {
+  font-size: 42px;
+  color: #4a2c2a;
+  margin-bottom: 12px;
+}
+
+.hero h1 span {
+  color: #8b5e5a;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  font-size: 16px;
+  max-width: 650px;
+  color: #6f4e4b;
+  margin-bottom: 35px;
+}
+
+/* BUTTON GROUP */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* PRIMARY BUTTON */
+.primary-btn {
+  background: #4a2c2a;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(74, 44, 42, 0.25);
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  background: #3a211f;
+}
+
+/* SECONDARY BUTTON */
+.secondary-btn {
+  background: #fcebd3;
+  color: #4a2c2a;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: 1px solid #4a2c2a;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #f8dfbf;
+}
+
+/* FEATURES */
+.hero-features {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #6f4e4b;
+  font-size: 14px;
+}
+/* NUTRITION SECTION */
+.nutrition-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.nutrition-section h2 {
+  color: #4a2c2a;
+  margin-bottom: 20px;
+}
+
+.nutrition-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nutrition-card {
+  background: #fcebd3;
+  padding: 20px;
+  width: 160px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(74, 44, 42, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.nutrition-card:hover {
+  transform: translateY(-5px);
+}
+
+.nutrition-card span {
+  font-size: 28px;
+}
+
+.nutrition-card h3 {
+  margin: 10px 0 5px;
+  color: #4a2c2a;
+}
+
+.nutrition-card p {
+  font-size: 14px;
+  color: #6f4e4b;
+}

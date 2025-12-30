@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE */
+.home-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero-screen {
+  height: 100vh; /* EXACT screen height */
+  display: flex;
+  flex-direction: column;
+
+  background: radial-gradient(
+    circle at top left,
+    #fbe6ff,
+    #fff6e5
+  );
+}
+
+/* CENTER CONTENT (EXCLUDES NAVBAR HEIGHT) */
+.hero-content {
+  flex: 1; /* fills remaining space below navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* BRAND */
+.brand-title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 8px;
+
+  background: linear-gradient(135deg, #4a2c2a, #b76e79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-tagline {
+  font-size: 20px;
+  color: #6f4e4b;
+  margin-bottom: 40px;
+}
+
+/* BELOW HERO */
+.below-hero {
+  background: #fff6e5;
+  padding: 60px 20px;
+}

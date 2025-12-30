@@ -1,0 +1,162 @@
+.recipes-page {
+  background: #fff6e5;
+  min-height: 100vh;
+  padding: 40px 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #4a2c2a;
+}
+
+.page-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #7a5c58;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #4a2c2a;
+  background: transparent;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: #4a2c2a;
+  color: white;
+}
+
+/* GRID */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.recipe-card {
+  background: #fbead2;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.recipe-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-content {
+  padding: 16px;
+}
+
+.tag {
+  background: #4a2c2a;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  float: right;
+}
+
+.recipe-content h3 {
+  margin: 10px 0 6px;
+  color: #3a1f1d;
+}
+
+.desc {
+  font-size: 14px;
+  color: #6b4a45;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.view-btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  background: #4a2c2a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: #fff6e5;
+  padding: 30px;
+  width: 400px;
+  border-radius: 14px;
+}
+
+.modal-box h2 {
+  color: #4a2c2a;
+}
+
+.modal-box ol {
+  margin-top: 10px;
+}
+
+.close-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 8px;
+  background: #4a2c2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+/* SEARCH BAR */
+.search-bar {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 1px solid #d8bfa6;
+  font-size: 14px;
+  margin: 20px auto;
+  display: block;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.search-bar::placeholder {
+  color: #9b7a74;
+}
+
+/* NO RESULTS */
+.no-results {
+  text-align: center;
+  color: #6f4e4b;
+  font-weight: 500;
+}

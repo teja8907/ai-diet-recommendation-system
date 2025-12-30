@@ -1,0 +1,205 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE */
+.home-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero-screen {
+  height: 100vh; /* EXACT screen height */
+  display: flex;
+  flex-direction: column;
+
+  background: radial-gradient(
+    circle at top left,
+    #fbe6ff,
+    #fff6e5
+  );
+}
+
+/* CENTER CONTENT (EXCLUDES NAVBAR HEIGHT) */
+.hero-content {
+  flex: 1; /* fills remaining space below navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* BRAND */
+.brand-title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 8px;
+
+  background: linear-gradient(135deg, #4a2c2a, #b76e79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-tagline {
+  font-size: 20px;
+  color: #6f4e4b;
+  margin-bottom: 40px;
+}
+
+/* BELOW HERO */
+.below-hero {
+  background: #fff6e5;
+  padding: 60px 20px;
+}
+/* FOOTER */
+.footer {
+  margin-top: 80px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #5a3e36;
+  font-size: 14px;
+  background: linear-gradient(to top, #fff2df, #fff8ef);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer p {
+  margin: 6px 0;
+}
+/* 🍎 Floating Food Animation */
+.floating-food {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floating-food span {
+  position: absolute;
+  font-size: 32px;
+  opacity: 0.25;
+  animation: floatUp 12s linear infinite;
+}
+
+/* Different positions & speeds */
+.floating-food span:nth-child(1) {
+  left: 10%;
+  animation-duration: 14s;
+}
+.floating-food span:nth-child(2) {
+  left: 30%;
+  animation-duration: 18s;
+}
+.floating-food span:nth-child(3) {
+  left: 55%;
+  animation-duration: 16s;
+}
+.floating-food span:nth-child(4) {
+  left: 75%;
+  animation-duration: 20s;
+}
+.floating-food span:nth-child(5) {
+  left: 90%;
+  animation-duration: 22s;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(110vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+/* 📊 Protein Progress Card */
+.protein-card {
+  max-width: 260px;
+  margin: 0 auto 40px;
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.protein-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #4a2c2a;
+}
+
+/* Ring */
+.protein-ring {
+  --size: 140px;
+
+  width: var(--size);
+  height: var(--size);
+  margin: 0 auto 12px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: conic-gradient(
+    #b76e79 var(--progress),
+    #f0e0d6 0
+  );
+}
+
+/* Inner circle */
+.protein-ring::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #fffaf5;
+}
+
+/* Value */
+.protein-value {
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  color: #4a2c2a;
+}
+
+/* Subtext */
+.protein-subtext {
+  font-size: 14px;
+  color: #6f4e4b;
+}
+.calendar-bubble {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #b76e79;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.calendar-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background: white;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 1000;
+}

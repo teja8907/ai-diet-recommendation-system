@@ -1,0 +1,28 @@
+.recipes-page {
+  padding: 30px;
+  background: #fffdf6;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+}
+
+.filter-buttons .active {
+  background: #d4af37;
+  color: white;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
