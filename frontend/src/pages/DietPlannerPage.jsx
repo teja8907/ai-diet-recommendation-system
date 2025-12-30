@@ -1,4 +1,6 @@
 import { useState } from "react";
+import API_BASE_URL from "../api";
+
 import "../components/DietPlanner.css";
 export default function DietPlanner() {
   const [form, setForm] = useState({
@@ -31,9 +33,10 @@ export default function DietPlanner() {
     const q = `age=${age}&height=${height}&weight=${weight}&goal=${goal}&diet=${diet}`;
 
     try {
-      const d = await fetch(`https://ai-diet-recommendation-system.onrender.com/daily-plan?${q}`).then(r => r.json());
-      const w = await fetch(`https://ai-diet-recommendation-system.onrender.com/weekly-plan?${q}`).then(r => r.json());
-      const m = await fetch(`https://ai-diet-recommendation-system.onrender.com/monthly-plan?${q}`).then(r => r.json());
+      const d = await fetch(`${API_BASE_URL}/daily-plan?${q}`).then(r => r.json());
+const w = await fetch(`${API_BASE_URL}/weekly-plan?${q}`).then(r => r.json());
+const m = await fetch(`${API_BASE_URL}/monthly-plan?${q}`).then(r => r.json());
+
 
       setDaily(d);
       setWeekly(w);
