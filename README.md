@@ -77,4 +77,6 @@ uvicorn main:app --reload
 ---
 
 ## 🧩 System Architecture
+<img width="449" height="585" alt="image" src="https://github.com/user-attachments/assets/af39199f-4438-4ddd-8163-98075d513989" />
+
 
