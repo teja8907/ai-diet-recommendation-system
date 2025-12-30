@@ -45,16 +45,6 @@ recommendations using real Indian food data.
 - Pandas
 - Scikit-learn (KMeans)
 - Uvicorn
-## 🧩 System Architecture
-
-React Frontend
-↓
-FastAPI Backend
-↓
-SQLite Database
-↓
-ML (KMeans) + Food Dataset
-## ⚙️ Local Setup
 
 ### Frontend
 cd frontend
